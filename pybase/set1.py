@@ -1,0 +1,12 @@
+asia = {"korea", "china", "japan", "korea"}
+print(asia)
+s1 = set([10, 20, 30])
+print(s1)
+s2 = set("hello")
+print(s2)
+s3 = set(("김철수", "홍길동", "이영희"))
+print(s3)
+s4 = set({'boy':'소년','school':'학교','book':'책'})
+print(s4)
+li = list(s1)
+print(li[0])
