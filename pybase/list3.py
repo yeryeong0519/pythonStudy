@@ -1,0 +1,14 @@
+a=[10,20,30]
+b=[40,50,60]
+c=a+b
+print(c)
+d=[10,20,30]
+e=d*3
+print(e)
+score=[88,90,70,82,96]
+print(score(2))
+score[2]=75
+print(score(2))
+nums=[10,20,30,40,50,60,70,80,90,100]
+nums[2:5]=[2,8,3]
+print(nums)
