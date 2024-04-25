@@ -5,7 +5,6 @@ def sumcalc(n):
     for num in range(1, n+1):
         sum += num
     return sum
-
 help(sumcalc)
 
 """docstring : 함수이름과 본체 사이에 작성하는 문자열 함수의 활용성을
