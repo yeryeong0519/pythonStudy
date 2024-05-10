@@ -1,0 +1,25 @@
+import wx
+app = wx.App()
+
+frame = wx.Frame(None,title = "라디오버튼 배치 테스트")
+radio1 = wx.RadioButton(frame, label = "아동", style=wx.RB_GROUP)
+radio2 = wx.RadioButton(frame, label = "청소년")
+radio3 = wx.RadioButton(frame, label = "어른")
+box = wx.StaticBoxSizer(wx.HORIZONTAL, frame, "선택")
+frame.SetSizer(box)
+box.Add(radio1)
+box.Add(radio2)
+box.Add(radio3)
+text = wx.TextCtrl(frame)
+btn = wx.Button(frame, label = "인사하기")
+def onClick(event):
+    str = text.GetValue()
+    wx.MessageBox(str +"님 안녕하세요", "결과", wx.OK)
+btn.Bind(wx.EVT_BUTTON, onClick)
+box2 = wx.BoxSizer(wx.VERTICAL)
+frame.SetSizer(box2)
+box2.Add(text)
+box2.Add(btn)
+
+frame.Show(True)
+app.MainLoop()
